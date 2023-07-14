@@ -9,6 +9,14 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
+-- Lazy loading
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup(plugins, opts)
+-- Line numbers
+vim.wo.number = true
+
+-- Equivalent to `imap <C-c> <esc>`
+vim.api.nvim_set_keymap('i', '<C-c>', '<esc>', {noremap = true, silent = true})
+
+-- Lazy loading from the plugins folder
+require("lazy").setup("plugins")
