@@ -8,12 +8,10 @@ return {
     opts = {
       direction = 'horizontal',
       -- open_mapping = [[<C-P>]]
-      vim.api.nvim_set_keymap('t', '<C-P>', [[<C-\><C-n>:ToggleTerm<CR>]], {noremap = true, silent = true}),
+      vim.keymap.set('t', '<C-p>', [[<C-\><C-n>:ToggleTerm<CR>]], {noremap = true, silent = true}, { desc = "Close the terminal with Control + p while in terminal mode" }),
       -- TODO fix the fact that on the first terminal open, it types an "i"
-      vim.api.nvim_set_keymap("n", "<C-P>", ":ToggleTerm<CR>i", {noremap = true, silent = true}),
-      vim.api.nvim_set_keymap("i", "<C-P>", "<C-c>:ToggleTerm<CR>i", {noremap = true, silent = true}),
-      -- vim.api.nvim_set_keymap("t", "<C-P>", "<C-/><C-n>", {noremap = true, silent = true}),
-      -- vim.api.nvim_set_keymap("i", "<C-P>", ":ToggleTerm<CR>", {noremap = true, silent = true}),
+      vim.keymap.set("n", "<C-p>", ":ToggleTerm<CR>i", {noremap = true, silent = true}, { desc = "Open the terminal with Control + p while in normal mode" }),
+      vim.keymap.set("i", "<C-p>", "<C-c>:ToggleTerm<CR>i", {noremap = true, silent = true}, { desc = "Open the terminal with Control + p while in insert mode" }),
 
       -- local keymap = vim.keymap.set,
       -- local s_opts = { silent = true },
