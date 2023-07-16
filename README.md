@@ -31,3 +31,5 @@ Display possible key combinations/movements as you type
 Make switching/targeting windows easier
 #### [colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua)
 Display hex/HTML colors inline		
+#### [lualine](https://github.com/nvim-lualine/lualine.nvim)
+Displays a bottom status bar with nice information
