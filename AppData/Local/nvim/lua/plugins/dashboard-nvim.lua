@@ -2,8 +2,7 @@ return {
     {
         'glepnir/dashboard-nvim',
         event = 'VimEnter',
-        theme = 'hyper',
-        config = {
+        opts = {
           week_header = {
            enable = true,
           },

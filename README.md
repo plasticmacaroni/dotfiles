@@ -6,6 +6,13 @@ Includes justfile with choco instructions for basic tool installation:
 - ripgrep, nerdfonts, rancher desktop, ++
 - includes just.exe to bootstrap installation of just
 
+---
+# Things to check
+1. `:checkhealth`
+- Ensure plugins are listed and make sure there are no `warnings`
+2. `:TSInstall c` and `cpp` 
+- Make sure clang (llvm) is installed, working, and available for nvim to build for nvim-treesitter 
+
 ### Neovim Plugins
 #### [lazy.nvim](https://github.com/folke/lazy.nvim)
 Plugin management, supports lazy loading
