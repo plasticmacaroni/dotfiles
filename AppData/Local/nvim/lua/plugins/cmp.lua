@@ -1,6 +1,6 @@
 return {
   {
-
+    -- referenced: https://github.com/bushblade/nvim/blob/main/lua/plugins/completion.lua
     "hrsh7th/nvim-cmp",
     dependencies = {
       "hrsh7th/cmp-cmdline", -- command line
