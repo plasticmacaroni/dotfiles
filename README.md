@@ -40,3 +40,24 @@ Make switching/targeting windows easier
 Display hex/HTML colors inline		
 #### [lualine](https://github.com/nvim-lualine/lualine.nvim)
 Displays a bottom status bar with nice information
+
+## Things to do:
+Install LSP
+
+Enter :LspInstall followed by the name of the server you want to install
+Example: :LspInstall pyright
+Install language parser
+
+Enter :TSInstall followed by the name of the language you want to install
+Example: :TSInstall python
+Install Debugger
+
+Enter :DapInstall followed by the name of the debugger you want to install
+Example: :DapInstall python
+Manage plugins
+
+## Use the Lazy plugin homepage and perform updates
+Run :Lazy check to check for plugin updates
+Run :Lazy update to apply any pending plugin updates
+Run :Lazy clean to remove any disabled or unused plugins
+Run :Lazy sync to update and clean plugins
